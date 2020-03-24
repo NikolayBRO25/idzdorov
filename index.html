@@ -1,24 +1,838 @@
-<?
- $post["ip"] = $_SERVER["HTTP_CF_CONNECTING_IP"];
- $post["domain"] = $_SERVER["HTTP_HOST"];
- $post["referer"] = @$_SERVER["HTTP_REFERER"];
- $post["user_agent"] = $_SERVER["HTTP_USER_AGENT"];
- $post["headers"] = json_encode(apache_request_headers());
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Variconis</title>
+    <meta name="description" content="Variconis">
+    <meta name="keywords" content="">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/dr-dtime.js"></script>
+    <script src="assets/js/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="header">POZOR! Krema Variconis je namenjena samo tistim, ki se hočejo trajno znebiti razširjenih ven. Krema je formulirana tako, da ti pomaga doseči popoln izgled nog, o katerem že od nekdaj sanjaš! REDNO JO UPORABLJAJ!</div>
+    <div id="page_wrapper">
+        <div class="banner_contact_wrapper">
+            <div id="header_form">
+                <h1>Variconis</h1>
+            </div>
+            <!-- ORDER FORM -->
+
+            <div class="contact-form-box">
+                <!-- prekopirani form box -->
+                <div class="contact-form-box" id="repp3" style="display: none; ">Hvala za vaše naročilo!<br>O stanju pošiljke vas bomo obvestili preko e-poštnega naslova.</div>
+                <div class="contact-form-box" id="repp33" style="display: none "><span style="display:block">Odajam naročilo, prosimo, počakajte!</span></div>
+                <div class="contact-form-box" id="repp34" style="display: none;">Naročilo ste že oddali! Hvala za naročilo!</div>
+                <div class="contact-form-top">
+                    <span id="ime3">Kam naj vam pošljemo <br>vaše naročilo?</span>
+                </div>
+                <div class="contact-form-content">
 
 
- $curl = curl_init("http://destoshop.ru/api/check_ip");
- curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
- curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
- curl_setopt($curl, CURLOPT_TIMEOUT, 60);
- curl_setopt($curl, CURLOPT_POST, true);
- curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
+            <div class="right-block" id="form">
+                  <div class="right-label">
+                      <div class="rleft">
+                          <span class="white"><span class="dyn_discount">50</span>% cene je</span> DARILO za VAS
+                      </div>
+                      <div class="rright">
+                          <s><span class="dyn_old_price">78</span> <span class="dyn_currency">EUR</span></s>
+                          <br><span class="new"><span class="dyn_price">39</span> <span class="dyn_currency">EUR</span></span>
+                      </div>
+                  </div>
+                  <div class="form-block">
+                      <div class="timer">
+                          <div class="timer-text">Akcija se zaključi čez</div>
+                          <div class="timer-block">
+                              <span class="hours item">00</span>
+                              <div class="delimiter">:</div>
+                              <span class="mins item">27</span>
+                              <div class="delimiter">:</div>
+                              <span class="secs item">00</span>
+                          </div>
+                          <div class="bottom-line">
+                              <div class="h-text">ur</div>
+                              <div class="m-text">minut</div>
+                              <div class="s-text">sekund</div>
+                          </div>
+                      </div>
+                      <form action="https://app.hypeoffers.com/api/v1/lead/create?key=tmstUCko7hxaAWS0kUAa4o83xe0CcF8Wt1f2AUBqcxP4ZPRwq9Te6M96M6WtehlJ" method="post">
+                          <div class="inp-line inp-name">
+                              <input type="text" name="name" required="required" placeholder="Vpišite svoje ime">
+                          </div>
+                          <div class="inp-line inp-phone">
+                              <input type="tel" name="phone" required="required" placeholder="Vnesite telefonsko številko">
+                              <!--<input type="tel" name="phone-number" required="required">-->
+                              <!--<input type="hidden" name="phone" required="required">-->
+                          </div>
+                          <div class="c-s" style="display: none;">
+                              <div class="inp-line">
+                                  <select name="preferred_language"><option value="hr">Croatian (hrvatski jezik)</option>
+<option value="cs">Czech (čeština, český jazyk)</option>
+<option value="et">Estonian (eesti, eesti keel)</option>
+<option value="de">German (Deutsch)</option>
+<option value="el">Greek (modern) (ελληνικά)</option>
+<option value="hu">Hungarian (magyar)</option>
+<option value="it">Italian (italiano)</option>
+<option value="lt">Lithuanian (lietuvių kalba)</option>
+<option value="pl">Polish (język polski, polszczyzna)</option>
+<option value="pt">Portuguese (português)</option>
+<option value="ro">Romanian (limba română)</option>
+<option value="sk">Slovak (slovenčina, slovenský jazyk)</option>
+<option value="sl" selected>Slovene (slovenski jezik, slovenščina)</option>
+<option value="es">Spanish (español)</option>
+<option value="ru">Russian (Русский)</option></select>
+                              </div>
+                          </div>
+                          <div class="button-line">
+                                  <div style="border: 1px solid red; padding: 2%;  margin: auto; color: #222; background-color: rgba(255, 255, 255, 0.5); width: 90%; font-size: 16px; font-weight: bolder; margin-bottom: 5px;">
+                                  Pozor! Da bi dobili največji učinek, morate izpolniti celoten potek uporabe!
+                                  </div>
+                              <button type="submit">naročite</button>
+                          </div>
+                          <div class="hide"> <input type="hidden" name="stream" value="2aa714b3-f7a9-492e-827e-537e31504082"><input type="hidden" name="country" value=""><input class="redirect_field" type="hidden" name="redirect" value=""></div>
+                      </form>
+                  </div>
+              </div>
 
- $json_reqest = curl_exec($curl);
- curl_close($curl);
- $api_reqest = json_decode($json_reqest);
+                    <div class="sigurno">100% varen nakup</div>
+                </div>
+            </div>
 
-if(!@$api_reqest || @$api_reqest->white_link || @$api_reqest->result == 0){
-    header('Location: https://pantip.com/topic/39361460/', true, 302);
- }else{
-    require_once("b.php");
- }
+            <!-- ORDER FORM -->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="two_sides_wrapper">
+        <!-- LEFT PART -->
+        <div id="left_side_wrapper">
+            <h2 class="red_text">Ali je res tako preprosto vzbuditi zavist pri VSEH prijateljih ... Imeti popolne in gladke noge BREZ BOLEČIN IN ZATEČENOSTI ... In povečati svojo samozavest do te mere, da lahko končno brez sramu oblečeš krilo?</h2>
+            <h5 class="elevenmins_p">Vse, kar moraš storiti, je to, da si vzameš 11 minut svojega časa. Ravno toliko ti je potrebno, da odkriješ skrivnost uspešnega odstranjevanja pajkastih ven. Ta skrivnost je na tisoče ženskam po vsem svetu pomagala odstraniti razširjene vene brez operacije ...</h5>
+            <p><span class="yellow_bg">Bi se rada znebila teh grdih modrih ven?</span></p>
+            <p>Bi rada končno oblekla krilo, ki kaže noge? Potem pozorno preberi, kaj piše na tej strani, saj ti bomo razkrili skrivnost, za katero kirurgi nočejo, da jo izveš.</p>
+            <div class="testimonial geobox">
+                <h3>"Bolečine so mi oteževale življenje!"</h3>
+                <p>V 2 mesecih se je Renata znebila razširjenih ven</p>
+                <img src="assets/img/image(1).jpg" width="250">
+                <p class="clr123">"Potrebna sta bila dva meseca in pol, da so moje grde žile izginile! Če ne bi tega sama doživela, ne bi verjela, da je mogoče. Če me sestra ne bi nagovorila, da preizkusim Variconis, bi to sigurno odpisala kot še eno prevaro."*</p>
+                <h4>Renata, Ljutomer</h4>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+                <div class="clear"></div>
+            </div>
+            <h1 class="text-center">Celo Daniela se je zahvaljujoč vztrajnosti in naravnim sestavinam hitro znebila modrine s svojih nog!</h1>
+            <div class="testimonial geobox">
+                <h3>"Izgledam sijajno v bikiniju!"</h3>
+                <p>Daniela se je rešila ven v 6 tednih</p>
+                <img src="assets/img/image(2).jpg">
+                <p>"Pred odhodom na dopust se mi je uspelo rešiti grdih ven. Redno sem uporabljala kremo, se držala nasvetov za vaje, prehrano, spanje z dvignjenimi nogami in prvič sem lahko ponosno oblekla bikini. Kako tudi ne bi, sedaj so moje noge popolne!"*</p>
+                <h4>Daniela, Našice</h4>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+                <div class="clear"></div>
+            </div>
+            <h4 class="text-center">Trenutno na tisoče žensk po vsem svetu učinkovito odstranjuje krčne žile s to metodo ...</h4>
+            <h4 class="text-center">Sedaj si tudi ti lahko ena izmed njih!</h4>
+            <p>Končno lahko tudi ti, tako kot na tisoče drugih žensk, odkriješ čudežno metodo za popolne noge, ki jo ženske po svetu uporabljajo že stoletja. Skrivnost, ki ti bo pomagala, da se rešiš razširjenih in pajkastih ven že danes!</p>
+            <h1 class="red text-center large">..:POZOR:..</h1>
+            <h4 class="underline">Zaloge izdelka so omejene. Naročila se sprejemajo do <span class="red"><span class="action_date spellcheck">
+                  <script>dtime_nums(-1, true)</script>
+            </span></span>. Po tem datumu izdelek ne bo več na voljo!</h4>
+            <p></p>
+            <p><strong>Sporočilo Maje Ban,<br> strokovnjakinje za težave z razširjenimi venami</strong></p>
+            <p>Draga moja soborka v boju z razširjenimi venami,</p>
+            <p><span class="yellow_bg">če ti razne metode še vedno niso pomagale, da se rešiš razširjenih ven, moraš vedeti, da to verjetno <strong>NI TVOJA KRIVDA</strong>. Če še vedno ne opaziš rezultatov, ne glede na to, da poskusiš vse, kar vidiš na TV-ju ali prebereš v časopisih, in se tvoje vene iz nekega razloga še vedno ne zmanjšujejo ali bledijo, poglej, v čem je problem...</span></p>
+            <h3 class="green-title">Farmacevtska industrija in kirurgi varajo svoje paciente, ki se poskušajo rešiti razširjenih ven</h3>
+            <img src="assets/img/image(3).jpg" class="right">
+            <p>In to počnejo na dva načina. Kot prvo, prodajajo za milijone evrov vredna zdravila, tablete, maže, kreme in olja, ki so brez večjega učinka. Kot drugo, <strong>radi bi ti odvrnili pozornost od poceni in učinkovite rešitve za razširjene vene ...</strong></p>
+            <p>Zato se ne obsojaj, da si lena, ti manjka motivacije ali kaj podobnega, sprosti se. To ne pomeni, da moraš sprejeti poraz, opravičevati modre lise na nogah z geni, leti, nosečnostjo, kilogrami, stanjem, sedenjem in podobnim. Namesto tega se svojim težavam z razširjenimi nogami nasmej in uživaj v lepih, zdravih nogah, kakršne si že od nekdaj želiš ... Samo upoštevaj moj enostaven nasvet.</p>
+            <p>Verjemi mi, če bi rada na naraven način odstranila razširjene in pajkaste vene, se rešila bolečine in srbenja na nogah in ponovno oblekla svoje priljubljeno krilo, je ta skrivnost pravi način, da to storiš:</p>
+            <img src="assets/img/image(4).jpg" class="right">
+            <ul class="list-type">
+                <li><span class="yellow_bg">Brez operacije</span></li>
+                <li><b>Brez kemikalij</b></li>
+                <li><span class="yellow_bg">Brez laserja</span></li>
+                <li><b>Brez napornih vaj</b></li>
+                <li><span class="yellow_bg">Brez kozmetičnih tretmajev in dragih proizvodov</span></li>
+                <li><b>Ne da bi zapustila udobje lastnega doma</b></li>
+            </ul>
+            <p>In najbolje od vsega, ta hitra in učinkovita rešitev za odstranjevanje razširjenih in pajkastih ven je bila zasnovana s TABO v mislih. Kakorkoli, preden grem v podrobnosti, mi dovoli, da ti razkrijem, zakaj je bilo do sedaj vse proti tebi. Potem ti bom pojasnila, kako je ta skrivnost pomagala tisočem žensk, da spet oblečejo svoja krila.</p>
+            <h6><strong>Če si resnično želiš odstraniti razširjene in pajkaste vene, potem ti ne bo žal časa, ki ga boš potrošila za branje teh informacij.</strong></h6>
+            <h2 class="green-title">Katere metode odstranjevanja razširjenih ven si želiš?</h2>
+            <div class="treeproducts">
+                <div class="productone">
+                    <p>Variconis</p>
+                    <img src="assets/img/product3.png" class="bord">
+                    <p>Varna za uporabo<br>Delujejo hitro<br>Trajni rezultati</p>
+                </div>
+                <div class="productone">
+                    <p>Operacija</p>
+                    <img src="assets/img/image(6).jpg" class="bord">
+                    <p>Boleča in tvegana<br>Daljši čas okrevanja<br>Rezultati niso trajni</p>
+                </div>
+                <div class="productone">
+                    <p>Laser</p>
+                    <img src="assets/img/image(7).jpg" class="bord">
+                    <p>Dragi in nevarni<br>Potrebno je ponavljati tretma<br>Pomagajo samo pri manjših pajkastih venah</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <h3 class="green-title">Skrivnosti popolnih nog, za katere modna in farmacevtska industrija ter kirurgi ne želijo, da veš</h3>
+            <p>Pričnimo pri modi – nič ne bi imelo smisla, če bi bili vsi lepi, vitki in popolni. Nihče ne bi kupoval modnih revij in predragih dizajnerskih oblek v obupanem poskusu, da spremlja trende medijskih in modnih tajkunov.</p>
+            <img src="assets/img/image(8).jpg" class="right bord">
+            <h6>Farmacevtska industrija vsakoletno zaluži bogastva s promoviranjem novih revolucionarnih rešitev, za katere misliš, da bodo rešile tvoj problem.</h6>
+            <p>Med našo evolucijo so naši predniki imeli drugačen način življenja. Niso toliko časa preživeli stoje ali sede, hrana je bila bolj zdrava. Ampak zadnjih nekaj tisoč let se je vse spremenilo, tako opravila, ki jih opravljamo, hrana, ki jo jemo – življenjski stil je drugačen. Veliko bolj opravljamo dela, ki so pasivna in s tem ustvarjamo pritisk na vene. Prehranjujemo se nezdravo in manj se gibamo – posledica je debelost, kar ustvari še dodaten pritisk na vene. Kirurgi nas konstantno zasipavajo z informacijami o nebolečih postopkih, s katerimi se bomo za vedno rešili tega problema. Radi bi, da mi to verjamemo in delamo – vsak od nas.</p>
+            <p>Tajkuni na vrhu lestvice se tega še kako zavedajo. Oni na nas delajo profit – vsakodnevno. In če ne veš, kaj te je doletelo, se ne moreš upreti, da ne bi poskusil nekaj iz bogate ponudbe. Vse je stvar dobre reklame in naše lahkovernosti. Razlog leži globoko v tebi, saj si močno želiš rešiti problem. Če zavestno ne prepoznaš svoje lahkovernosti, je to lahko stalna prepreka in vodila te bo do izbire napačnih metod, ki tvojih nog ne bodo naredile brezhibno lepih.</p>
+            <div class="tokmravljenja">Med odstranjevanjem razširjenih ven:</div>
+            <p><span class="large-red">1. dan:</span> Tvoj prvi nanos kreme Variconis bo takoj pričel z delovanjem. Aktivne sestavine kreme prodrejo skozi kožo, neposredno do problematičnih delov.</p>
+            <img src="assets/img/image(9).jpg" class="left mrgb">
+            <p><span class="large-red">1. teden:</span> Krema prične intenzivneje delovati in bolje se počutiš glede videza tvojih nog. Bolečina in srbečica sta blažji.</p>
+            <p><span class="large-red">2. teden:</span> Z lastnimi očmi začneš opažati, da se modrina zmanjšuje in kapilare izginjajo.</p>
+            <p><span class="large-red">3. teden:</span> Zmanjšanje razširjenih ven je vsak dan bolj tvoja realnost. Variconis prične spreminjati izgled tvojih nog. Spoznaš, da je mogoče imeti lepe, zdrave noge, kot si jih že od nekdaj želiš!</p>
+            <p><span class="large-red">4. teden in naprej:</span> Tvoje noge izgledajo drugače in nimaš več težav, ki so jih povzročale razširjene vene. Tvoja samozavest zraste. Lahko nosiš kratka oblačila, ki jih prej nisi. Imaš motivacijo, da nadaljuješ in nič te ne more zaustaviti!</p>
+            <h5><strong>To je sestava, na kateri deluje krema Variconis.</strong></h5>
+            <h1 class="text-center medium">Pomembno opozorilo o "čudežnih formulah za odstranjevanje razširjenih ven". Zakaj niti ena ne deluje (razen te)?</h1>
+            <p>Do sedaj so bile vse formule za odstranjevanje razširjenih ven v najboljšem primeru razočaranje, v najslabšem pa čista prevara. Mnogi izdelki za razširjene vene povzročajo številne posledice na tvojem zdravju. Na splošno vse metode odstranjevanja razširjenih ven spadajo v eno od naslednjih treh kategorij, med katerimi je ena nevarna za zdravje. Če z uporabo katere od teh metod zares odstraniš rezširjene vene, je to zgolj slučaj.</p>
+            <h4>Prva vrsta so metode, ki jih mora narediti strokovnjak in ki se delijo na 3 vrste:</h4>
+            <ul class="list-important">
+                <li>
+                    <img src="assets/img/image(10).jpg">
+                    <p><strong>Laserski tretma.</strong> Praktično uničuje vene, po enem mesecu odmrejo in začnejo izginjati. Ponavadi so potrebni 3–4 tretmaji v 16 dneh, tako da je to zelo dolgotrajen tretma. Nujna je lokalna anestezija in uporablja se le za manjše pajkaste vene. Spoznaj se s STRANSKIMI UČINKI: opekline kože, sprememba barve, bolečina, manjši ali večji strdki, poškodovanje globokih ven, poškodbe živcev.</p>
+                </li>
+                <li>
+                    <img src="assets/img/image(11).jpg">
+                    <p><strong>Operacija razširjenih ven. </strong>Opravi se pod splošno anestezijo. Noga se odpre in vena se izreže, zapre v celoti odstrani iz obtoka. Pacienti imajo šive in povoje. STRANSKI UČINKI: podplutbe, otekline in bolečina trajajo do dva meseca in tveganje za infekcijo je visoko, saj gre za odprto operacijo, splošna nevarnost anestezije, rigidnost zaradi poškodbe živcev in daljše obdobje okrevanja.</p>
+                </li>
+                <li>
+                    <img src="assets/img/image(12).jpg">
+                    <p><strong>Sklerozacija. </strong>Ne odstrani bolečin zaradi razširjenih ven. Edino, kar reši, so pajkaste vene – vijoličaste in rdeče male žilice, vidne pod kožo. Z injekcijo se vbrizgajo kemikalije, ki izzovejo vnetje in poškodujejo vene in kapilare, pri čemer te izginejo. Slaba stran te metode je ta, da je potrebnih več tretmajev, ki so neprijetni in nezanesljivi. V 93 % primerov se pajkaste vene po določenem času vrnejo. V vene se vbrizgajo kemikalije in možne so alergijske reakcije.</p>
+                </li>
+            </ul>
+            <p><strong>Druga vrsta so pripravki in tablete. </strong>Z uporabo lokalnih pripravkov in prehranskih dodatkov se lahko prepreči pojav težav. Simptomi se lahko ublažijo in lahko se upočasni napredovanje bolezni. Mnogo pripravkov na naravni bazi se lahko najde v lekarnah, veliko pa se jih tudi lahko pripravi doma. V lekarnah se lahko kupijo razni geli, kreme, emulzije, spreji, prehranski dodatki rastlinskega izvora in podobno. Lahko se dobi tudi veliko število tablet, ki lahko stabilizirajo kapilare in se uporabljajo za zdravljenje venske insuficience.</p>
+            <p><strong>Tretja vrsta so elastične nogavice. </strong>Te igrajo izključno preventivno vlogo pri preprečevanju ali upočasnitvi razvoja bolezni žil – preprečujejo širjenje razširjenih ven, bolečine in otekanja. Z njimi se želi doseči določena stopnja kompresije po posegu na površinskih venah. Nogavice so narejene tako, da največjo kompreso izvajajo na spodnjem delu noge, manjšo pa na zgornjem delu. Upočasnijo napredovanje bolezni, preprečujejo zastajanje krvi v venah in njihovo nadaljnje širjenje. Olajša vračanje krvi iz ven v srce in blažijo zatekanje. Uporabljajo se po navodilih zdravnika.</p>
+            <div class="stopsign">
+                <img src="assets/img/image(13).jpg" class="left">
+                <h2>Ne nasedaj lažnim proizvodom za odstranjevanje razširjenih ven in prenehaj biti žrtev takih proizvodov enkrat za vselej!</h2>
+            </div>
+            <p>Tukaj je ena umazana skrivnost, za katero farmacevtska industrija ne želi, da veš: oni zelo dobro vedo, da ti ne bo uspelo odstraniti razširjenih ven z njihovimi kremami, geli, tabletami in olji. Tako kot nihče noče izdelati avtomobila, ki bi trajal vse življenje, tako kot so kuhinjski aparati programirani, da se pokvarijo, čim se jim je iztekla garancija ... Tako tudi kirurgi in kozmetični strokovnjaki ali proizvajalci teh izdelkov ne želijo, da se rešiš razširjenih ven. Saj vedo, da za vedno izgubijo možnost, da se vrneš in še kaj kupiš, če ti jih uspe odstraniti. To bi za njih predstavljalo izgubo milijona dolarjev letno.</p>
+            <p>Večini proizvajalcev preparatov za razširjene vene ne bo všeč, ko resnica pride na dan. Zavedajo se, da bodo izgubili milijone dolarjev, čim ljudje spoznajo, da lahko odstranijo razširjene vene s skrivnostjo, ki jo pozna že na tisoče žensk po vsem svetu in ki stane približno <strong>1</strong> EUR na dan.</p>
+            <p>Tako stanje je slabo – milijoni žensk so žrtve prevare že predolgo časa in čas je, da se to spremeni.</p>
+            <div class="geobox">
+                <h1 class="text-center blue medium">Ko nič drugega ni "vžgalo", so se znebile razširjenih ven. S kremo Variconis!</h1>
+                <h6 class="blue">Te štiri povsem običajne ženske so samo primer neštetih oseb, ki so dosegle neverjetne rezultate pri reševanju težav z razširjenimi venami. Boš ti naslednja?</h6>
+                <div class="fourprofiles_wrapper">
+                    <div class="profilebox_table">
+                        <img src="assets/img/image(14).jpg">
+                        <p>Rezultati v 2 mesecih* <br><span>Ivana, 27</span></p>
+                    </div>
+                    <div class="profilebox_table">
+                        <img src="assets/img/image(15).jpg">
+                        <p>Rezultati v 6 tednih* <br><span>Marija, 40</span></p>
+                    </div>
+                    <div class="profilebox_table">
+                        <img src="assets/img/image(16).jpg">
+                        <p>Rezultati v 4 tednih* <br><span>Katarina, 42</span></p>
+                    </div>
+                    <div class="profilebox_table">
+                        <img src="assets/img/image(17).jpg">
+                        <p>Rezultati v 2 mesecih* <br><span>Maja, 31</span></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <h1 class="text-center green">Deli tudi ti z nami svojo zgodbo o uspehu in nagradili te bomo!</h1>
+            <h2>Dejstva o razširjenih venah in življenjski cilj</h2>
+            <p>Milijoni ljudi so že predolgo časa žrtve – končno je čas, da se to spremeni. Po raziskavah Svetovne zdravstvene organizacije, ki se izvajajo zadnjih 20 let, ljudje bolj kot kdajkoli prej trošijo denar za nakupe preparatov za vene, knjig o domačih pripravkih in ostalih "čudežnih pomagal", ki obljubljajo brezhibne noge.</p>
+            <p><span class="yellow_bg">- več kot 35 % ljudi trpi za kroničnimi boleznimi žil, odstotek pa se z leti povečuje</span></p>
+            <p>- bolezni žil povzročajo izgubo okrog 2 milijona delovnih dni in stroške zdravljenja okrog 3 milijarde dolarjev letno</p>
+            <p><span class="yellow_bg">- razširjene vene se po operaciji v 60 % primerov vrnejo po 5 letih</span></p>
+            <p>- število mladih z razširjenimi venami se je v zadnjih dveh desetletjih drastično povečalo</p>
+            <p>... Sedaj veš, zakaj je pomembno poznati resnico, ki se skriva za zaslužkom farmacevtske in modne industrije in kirurgov na problemu razširjenih ven. Nekateri ljudje, ki so že rešili svoj problem, so na tej strani. Če razmisliš o vsem tem, boš hotela biti ena izmed njih. Motiv vsakega strokovnjaka, ki želi pomagati ljudem tako, da jim pove resnico, je zelo enostaven. Zaradi teh nekaj evrov, ki jih vložiš na dan, če naročiš kremo Variconis, ne boš veliko izgubila, nihče pa ne bo posebej obogatel, razen tebe. Drugače bi ta denar vrgla stran za nove knjige o zdravljenju razširjenih ven, preparate, sredstva za odstranjevanje ven, ki ti ne bodo pomagali. Po drugi strani pa, če ne razmisliš o tem, lahko izgubiš VSE – saj je to res velika priložnost, da se posloviš od sramu zaradi svojih nog, problemov z obleko in depresije, ki spremlja krčne žile.</p>
+            <p>Če še naprej dvomiš v vse to, kar bereš, lahko sam raziščeš in se prepričaš, da izdelek, ki ga najdeš na tej strani zares nima nikakršnih stranskih učinkov in ima večstranske prednosti za tvoje noge. Iz izkušenj tistih, ki so ga že preizkusili, se ve, da boš, če si le daš priložnost in preizkusiš to kremo na bazi naravnih snovi, videl, za kaj gre in preostanek življenja boš preživel kot zdrava in srečna oseba z lepimi, gladkimi nogami, brez razširjenih ven.</p>
+            <div class="warning">
+                <img src="assets/img/image(18).jpg" class="left">
+                <h4><span class="red">POZOR:</span> Če tvoje razširjene vene pričnejo izginjati v 48-ih urah, zmanjšaj uporabe kreme na vsak drugi dan.</h4>
+            </div>
+            <h1 class="text-center">Bi ti farmacevtska industrija zares lagala?</h1>
+            <img src="assets/img/image(19).jpg" class="right">
+            <p>Vsi vemo, da je korporativna industrija polna prevarantov in lažnivcev. Pomisli samo na kakšno od prevar, ki jih lahko slišiš v novicah zadnje čase. Ko vidiš, kaj vse se dogaja po svetu, ni težko spoznati, da ljudem danes ni pomembno, na kakšen način pridejo do denarja, sploh, če so v igri visoke vsote.</p>
+            <p>Če malo raziščeš proizvode, ki jih Svetovna zdravstvena organizacija in lokalne tržne inšpekcije vsakodnevno potegnejo iz tržišča zaradi neizpravnosti, te bo presenetilo, koliko proizvodov za vene se nahaja med njimi.</p>
+            <p>Če se ceniš, si naredi uslugo in ne bodi več žrtev teh prevar. Vprašaj se, česa si pravzaprav želiš in ne meči stran denarja za stvari, ki te ne bodo pripeljale do cilja. Rad bi se rešil ven, ne pa kar naprej metal stran denarja za nove poskuse, mar ne?</p>
+            <h5><span class="yellow_bg">Čas je, da odstraniš razširjene vene</span></h5>
+            <p>Pozabi na vse kreme za odstranjevanje ven, ki jih poznaš, saj take gotovo ne boš nikoli našla. EDINSTVENA JE. Zakaj? Zato, ker je 100-% naravna in testirana. To ni še ena trapasta nogavica, tableta ali gel, s katerimi bi se rešila razširjenih in pajkastih ven v dveh tednih ... Rezultata pa od nikoder. Odkrila boš skrivnost nekaj tisoče žensk, ki so obrisale modrino s svojih nog in venam za vedno rekle zbogom!</p>
+            <p><span class="yellow_bg">Preprosto ne obstaja niti ena krema, podobna tej. Obstaja mnogo poskusov, da se iz narave vzame najboljše, nihče pa ne želi, da dosežeš trajne rezultate, saj bi tako nehali služiti na tebi. Poglej te rezultate ...</span></p>
+            <div class="geobox">
+                <div class="best_story">
+                    <h3 class="text-center">Najboljša zgodba o uspehu tega meseca<br><span class="red-dark">"Izgledam in počutim se sijajno!"</span></h3>
+                    <img src="assets/img/image(20).jpg">
+                    <div class="description">
+                        <p>Slika levo: <br><strong>Helena pred uporabo<br>Variconisja</strong></p>
+                        <p>Slika desno: <br><strong>Helena danes</strong></p>
+                    </div>
+                </div>
+                <p>Moja izkušnja z Variconis je čudovita. Doživela sem vse, kar so obljubljali: bolečine so izginile, vene so se skrčile in koža na mojih nogah je brezhibna.</p>
+                <p>Čeprav imam 54 let, rada hodim in sem aktivna, boleče krčne žile pa so mi onemogočale hojo in igranje z vnuki. Stalno sem se pritoževala in težko hodila. Kolegica iz službe mi je omenila Variconis. Uporabljam ga mesec dni in noge me skoraj ne bolijo več, žile pa so se skrčile ... Brez kakršnihkoli stranskih učinkov! Počutim se, kot da bi izgubila nekaj let in sem polna energije in volje!"*</p>
+                <p><strong>- Helena, Črnomelj</strong></p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <hr>
+            <div class="geobox">
+                <h6 class="red">Če se zares želiš znebiti razširjenih ven, si preberi ta ekskluzivni intervju ...</h6>
+                <h6>"Bivša trenerka fitnesa, ki je prenehala s treningi in govori o tem, kako je izgubila krčne žile, ki so jo mučila leta in leta"</h6>
+                <p>To so resnične fotografije. Kažejo Catherine Jones, bivšo fitnes trenerko, 7. septembra 2015 in pol leta kasneje, 4. marca 2015. Catherine je uspelo znebiti se razširjenih ven s pomočjo Variconis kreme!</p>
+                <p>Če imaš težave z venami, prouči te fotografije, saj ti kažejo, kako hitro lahko ZMAGAŠ v bitki in prideš gladke kože brez vidnih ven. Catherine je delila podrobnosti o svoji preobrazbi v tem intervjuju ...</p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+                <hr>
+                <p><strong>VPRAŠANJE: Gospa Jones, ko vas danes gledam, je očitno, da ste šli čez neverjetno transformacijo – zahvaljujoč kremi Variconis. Preden se pogovoriva o njej, nam lahko poveste kaj več o vašem problemu z venami?</strong></p>
+                <p><strong>Catherine: </strong>Vse življenje sem trenirala in se ukvarjala s fitnesom. Že takrat sem imela izražene vene, ampak niso bile tako boleče in sem trpela. Ko sem se prenehala ukvarjati s fitnesom in naglo prekinila s fizičnimi aktivnostmi, so se začeli problemi. Pridobila sem na teži in čez nekaj mesecev so mi vene začele povzročati nevzdržne probleme.</p>
+                <hr>
+                <p><strong>VPRAŠANJE: Kako ste se na koncu odločili, da nekaj ukrenete?</strong></p>
+                <p><strong>Catherine: </strong>Ko sem spoznala, v kaj sem se spremenila. Od fitnes trenerke do prerano ostarele babice. Ne morem vam opisati občutka, ko sem spoznala, da od bolečin niti ne morem normalno hoditi. Potem sem pred nekaj meseci srečala neke svoje bivše stranke. Čeprav niso nič rekli o mojem izgledu in težki hoji, sem po njihovih pogledih lahko zaključila, da se sprašujejo, kako je lahko trenerka fitnesa nekaj takega naredila iz sebe. Vedela sem, da moram ukrepati in nekaj narediti.</p>
+                <hr>
+                <p><strong>VPRAŠANJE: Kaj ste storili, da bi se rešili razširjenih ven?</strong></p>
+                <p><strong>Catherine: </strong>Čeprav sem bila skeptiča glede vseh teh preparatov in kremic, je bila Variconis moja izbira, saj je obetala z sestavo in priporočili. Uporabljala sem jo zelo vztrajno in redno. Ker mi je že na začetku ublažila bolečine, mi je bilo lažje trenirati. Tako sem s skupaj z uporabo kreme občasno vadila zaradi cirkulacije in to je verjetno pospešilo napredek.</p>
+                <hr>
+                <p><strong>VPRAŠANJE: Ali lahko opišete, kako se počutite sedaj, v primerjavi s prej?</strong></p>
+                <p><strong>Catherine: </strong>Kot da bi mi grozno breme padlo z ramen. Hoja ni več noben problem. Niti mi ni več treba skrivati nog, saj so končno gladke in lepe. Grde, modre in izbočene vene so se popolnoma skrčile. Jaz pa se sedaj spet lahko ukvarjam s fizičnimi aktivnostmi.</p>
+                <hr>
+                <p><strong>VPRAŠANJE: Kdaj ste opazili, da se vaše stanje izboljšuje?</strong></p>
+                <p><strong>Catherine: </strong>Oh, skoraj takoj. Že po nekaj dneh sem občutila olajšanje. Najprej je pričela izginjati bolečina, zatem pa so počasi začele izginjati tudi vene. Koža ni bila več modra kot nekdaj. To mi je dalo voljo, da nadaljujem. Res, vsak teden so bili rezultati boljši in boljši, dokler ni bila koža povsem brezhibna.</p>
+                <hr>
+                <p><strong>VPRAŠANJE: Kako danes ohranjate dosežene rezultate?</strong></p>
+                <p><strong>Catherine: </strong>Neverjetno preprosto. Že nekaj mesecev mi ni izstopila niti ena vena. Zmerno vadim, držim se nasvetov glede prehrane, spanje in seveda občasno uporabljam Variconis. Ni mi je treba več redno nanašati. Vsakih nekaj mesecev porabim eno pakiranje, preventivno. Moje vrstnice ne morejo verjeti, da nimam krčih žil, ko pa jim povem svojo zgodbo, takoj še one začnejo uporabljati to kremo.*</p>
+                <hr>
+                <p>- Intervjuvala: Ana Bitenc</p>
+                <ul class="davidlista">
+                    <li><span class="yellow_bg">Razširjene vene lahko odstraniš na popolnoma naraven način.</span></li>
+                    <li>Ponovno lahko oblečeš priljubljene minice in kratke hlače.</li>
+                    <li><span class="yellow_bg">Lahko se počutiš seksi v vsakem trenutku.</span></li>
+                </ul>
+                <p>... Vse to je mogoče z Variconis kremo, ki ti bo tvojemu telesu pomagala, da se reši razširjenih ven na naraven in preverjen način ... In to ti garantiramo!</p>
+            </div>
+            <h2 class="text-center gold">Variconis ti zagotavlja:</h2>
+            <h1 class="text-center red large">Uspešno se boš rešila<br><u>razširjenih ven ali pa ti vrnemo denar!</u></h1>
+            <p><strong>Točno tako – ali opaziš rezultate ali pa ti vrnemo denar. Če misliš, da je to nek trik, se prepričaj, mi samo verjamemo v učinkovitost našega proizvoda. Tukaj si, ker iščeš rešitev za doseganje idealnega videza nog in ravno to ti bomo dostavili na tvoj domači naslov. Garantiramo ti rezultate, ali pa ti vrnemo denar.</strong></p>
+            <h2 class="text-center green-dark">Naj vsi opazijo tvoje nove, brezhibno lepe noge!</h2>
+            <img src="assets/img/image(21).jpg" class="right bord">
+            <p>Kombinacija nekaj močnih naravnih snovi je formula za hitro in dokazano odstranjevanje razširjenih ven!</p>
+            <p>Tako superiorna v rezultatih, a vendar tako naravna.</p>
+            <p>Privošči svojim nogam zdrave sestavine in imej atraktiven videz nog.</p>
+            <p>Vrni elastičnost in gladek videz in dobi pozornost, ki si jo zaslužiš.</p>
+            <div class="clear-twe"></div>
+            <h2 class="text-center green-dark">Uživaj v življenju!</h2>
+            <img src="assets/img/image(22).jpg" class="center">
+            <p><strong>NAVODILA: </strong>Nanesi Variconis na svoje noge dvakrat na dan, zjutraj in zvečer med prvimi 4–6 tedni. Nanesi kremo po kopanju, na čisto in suho kožo. Nežno vtri s krožnimi gibi, dokler je koža popolnoma ne vpije. Ko že dosežeš želene rezultate, kremo nanašaj 3–4-krat na teden, da bi se rezultati obdržali.</p>
+            <h1 class="text-center violet">"OK, priznam ... Popolnoma sem bila <br><span class="mega">V ZMOTI</span><br> glede kreme Variconis"</h1>
+            <h4>Tatjana Mihelič nam pojasni, kako se je zatekla k "NAJBOLJŠEMU OROŽJU", da zmaga v borbi s svojimi razširjenimi venami</h4>
+            <p><strong>Tatjanina zgodba</strong></p>
+            <img src="assets/img/image(23).jpg" class="right bord">
+            <p>Pred približno 4 meseci mi je mama kupila Variconis. Čeprav sem do takrat poskusila z vsemi obstoječimi kremami, se mi je zdelo grdo, da ne poskusim, ko se je pa potrudila zame, ampak zares nisem imela nobenega upanja in nikakršnih pričakovanj ...</p>
+            <p><span class="yellow_bg">Moje žile so bile nabrekle, temno modre in boleče. V prvih 2 tednih sem se rešila bolečin in srbečice. Če bi mi to nekdo govoril, mu sploh ne bi verjela. Če ni ne bi bilo nerodno zaradi mame, bi ta proizvod odpisala kot še eno prevaro, ne da ga preizkusim.</span></p>
+            <p><span class="yellow_bg">In rada bi se popolnoma rešila razširjenih in pajkastih žil, in sedaj sem prepričana, da mi bo uspelo. Ne obremenjujem se več z videzom svojih nog. In vsem tistim, ki so nejeverni kot jaz, jim rečem, naj poskusijo in se prepričajo, ne bo vam žal. Nasprotno.</span></p>
+            <h1>Samo nanos kreme 2-krat na dan je najboljši način, da se hitro rešiš razširjenih ven!</h1>
+            <img src="assets/img/image(24).jpg" class="right bord">
+            <h6 class="violet">Krema Variconis je popolnoma naravna in varna, in kar je najbolje, nihče ne bo vedel, da jo uporabljaš – to bo tvoja mala skrivnost tvojega novega neverjetnega uspeha!</h6>
+            <p>Ne glede na to, da gre za kremo, ki se vtira samo dvakrat na dan, bo tvoje noge naredila brezhibno lepe v zelo kratkem času. To je zares formula prihodnosti, čeprav jo je preizkusilo že nekaj tisoč žensk ... Natančneje, vsak dan 1000 žensk po vsem svetu prične uporabljati kremo Variconis. Poseben plus te kreme je to, da nima nobenih stranskih učinkov in je primerna za vsakogar. Ni več razmišljanja o tem, kaj obleči, da zakriješ vene! Svoje pakiranje lahko nosiš vedno s sabo, in eno bo trajalo cel mesec. Ne obstaja nič zanesljivejšega!</p>
+            <br>
+            <img src="assets/img/product3.png" class="right">
+            <h1 class="text-center">Samo nanos kreme dvakrat na dan prinaša najboljše v dveh pogledih – hitro odstranjevanje ven in preprostost uporabe!</h1>
+            <div class="clear"></div>
+            <div class="geobox">
+                <h1 class="text-center large violet">"Rešila sem se krčnih žil in dobila brezhibno lepe noge!"</h1>
+                <p class="green">Andreja se je rešila razširjenih ven in spremenila videz svojih nog s pomočjo kreme na bazi rastlinskih izvlečkov. Sedaj lahko tudi ti, tako kot tudi milijoni ljudi po svetu, storiš pravi korak za lepe noge!</p>
+                <img src="assets/img/image(26).jpg" class="full">
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+                <p><strong>Andrejina zgodba o odstranjevanju razširjenih ven je polna navdiha!</strong></p>
+                <img src="assets/img/product3.png" class="right">
+                <h2>KAKO MI JE ODSTRANJEVANJE KRČNIH ŽIL SPREMENILO ŽIVLJENJE</h2>
+                <p>Andreji je življenje uhajalo iz rok. Njene vene so bile izražene in boleče, bila je depresivna in imela je zelo nizko samozavest. Potem pa je končno našla način – Variconis! Če je Andreji uspelo, lahko tudi tebi. Preberi njeno osupljivo zgodbo, ki ti bo gotovo pomagala doseči lepšo, bolj gladko in elastično kožo na nogah!</p>
+                <hr>
+                <p>Po rojstvu hčerke sem padla v poporodno depresijo. Popolnoma me je spremenila. Nisem bila več srečna in lepa Andreja, ki so jo vsi opevali zaradi njenega videza. Postala sem depresivna, besna, ob vsem tem pa so mi življenje grenile še krčne žile, ki so se pojavile med nosečnostjo. Imela sem nizko samozavest, nisem niti hotela na morje, da se ne bi videle moje žile. Celo sprehodom z možem sem se izogibala, saj so me noge ob vsakem fizičnem naporu precej bolele.</p>
+                <p>Končna "prebuditev" je prišla po pogovoru z mojim možem, pogovoru, ki mi je bil tako potreben, da mi nekdo na pravi način reče, kako je drugim težko zaradi mojega obnašanja.</p>
+                <p class="underline">POT DO ZMAGE</p>
+                <p>Ko sem videla svoje noge, sem najprej doživela trenutek psovk in čudenja! A bilo je resnično, tu pred mojimi očmi. Potem sem se ure gledala v ogledalu in se, razočarana nad svojim izgledom, odločila, da hočem svojo staro sebe nazaj. Zapisala sem svoje CILJE za prihodnost in jih nalepila na omaro, da bi jih videla VSAKIČ, ko se grem obleči. </p>
+                <p><span class="yellow_bg">S pomočjo kreme Variconis, rednega mazanja in lahkih vaj mi ni samo uspelo odstraniti krčnih žil, ampak sem tudi premagala poporodno depresijo, ki me je pestila.</span> Naravni endorfin, ki se sprošča z vadbo, in zadovoljstvo nad sabo sta mi pomagala bolje misliti. Usmerila sem vse svoje moči v to, da živim zdravo in s tem tudi vsa moja družina. Sedaj smo srečnejši kot kdajkoli prej.*</p>
+            </div>
+            <blockquote>
+                <p><span class="green">Tudi tebi želimo dobrodošlico v svetu brezhibnih nog s kremo Variconis,</span> uradnim sponzorjem milijona žensk s prekrasnimi nogami. Spodaj pazljivo preberi o njenih koristih in garancijah. </p>
+            </blockquote>
+            <h1 class="text-center"><span class="red">Variconis krema je TO, kar potrebuješ</span> za nezlomljivo samozavest!</h1>
+            <img src="assets/img/image(27).jpg" class="left">
+            <ul class="list-tocno">
+                <li><span class="yellow_bg">Brez zadržkov nosi seksi in kratko obleko!</span></li>
+                <li>Vedi, da je vsak, ki ga srečaš, zavisten zaradi tvojih nog!</li>
+                <li><span class="yellow_bg">Reci zbogom skrivanju in samozavestno nosi krila!</span></li>
+            </ul>
+            <div class="clear"></div>
+            <p>Nič (niti razširjene vene!) ti ne more preprečiti, da živiš najbolje kot le lahko. Začni živeti danes s kremo Variconis!</p>
+            <p>Bi ti bilo všeč, če bi se samo v 30 dneh znebila zatečenih in bolečih ven s pomočjo kreme, ki v sebi skriva najboljšo skrivnost odstranjevanja razširjenih ven?</p>
+            <p>Danes na tržišču obstaja mnogo proizvodov na bazi naravnih sestavin, ki posnemajo kremo Variconis. Ne pristani na cenene ponaredke. Samo ta sestava je prava!</p>
+            <h1 class="text-center">Bi rada oblekla svoje priljubljeno krilo?<br><span class="green">Svetovni hit v odstranjevanju razširjenih ven lahko pomaga</span></h1>
+            <img src="assets/img/image(28).jpg" class="left">
+            <p>S pomočjo kreme Variconis lahko svoje priljubljeno krilo oblečeš v trenutku. Lahko pa tudi dodaš še nekaj takih super kratkih krilc v svojo kolekcijo!</p>
+            <p><span class="yellow_bg">Krema na bazi naravnih sestavin je najenostavnejši način, da odstraniš razširjene vene. Redno jo uporabljaj vsak dan in glej rezultate!</span></p>
+            <p>Variconis – naraven način, da se rešiš razširjenih ven!</p>
+            <div class="clear"></div>
+            <h1 class="text-center red large">
+                <span class="fl">POZOR</span>
+            </h1>
+            <h4 class="underline">Zaloge izdelka so omejene. Naročila se sprejemajo do <span class="redtext"><span class="action_date spellcheck"><script>dtime_nums(-1, true)</script></span></span>. Po tem datumu izdelek ne bo več na voljo!</h4>
+            <div class="nacin-zivota">
+                <h4 class="red">Kako se ti bo spremenil način življenja?</h4>
+                <p><strong>Kako sedaj vidiš samo sebe? Lahko dosežeš vse tisto, v kar trdno verjameš ...</strong></p>
+                <div>
+                    <img src="assets/img/image(29).jpg" class="left">
+                    <ul>
+                        <li>Predstavljaj si, da se gledaš v ogledalu in ne prepoznaš svojih nog!</li>
+                        <li>Predstavljaj si sebe v seksi kratkih krilcih ...</li>
+                        <li>Predstavljaj si, kako te veseli, da ti minica super paše.</li>
+                        <li>Predstavljaj si sebe na neki zabavi ali druženju kot samozavestno in sproščeno osebo.</li>
+                        <li>Predstavljaj si, da, medtem ko delaš na svojih lepih in gladkih nogah, izboljšuješ svoje zdravje.</li>
+                        <li>Predstavljaj si, da imaš voljo in moč, ki sta te krasili preden so se pojavile krčne žile.</li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="text-center">Beri naprej, da spoznaš, kako je Maja odstranila svoje razširjene vene s kremo Variconis!</h1>
+            <div class="geobox">
+                <h3 class="blue-light">"Končno sem zadovoljna sama s sabo!"</h3>
+                <img src="assets/img/image(30).jpg" class="best-buy-story">
+                <div class="clear"></div>
+                <p>"Preden sem preizkusila Variconis, sem preizkusila vse kreme in preparate, ki sem jih lahko našla. Nisem bila navdušena nad posledicami, ki so mi jih nekatere izmed njih pustile. Vadba je bila v mojem primeru brez koristi. Potem pa mi je prijateljica zdravnica priporočila Variconis in mi svetovala, da poleg njene uporabe še pazim na prehrano in se občasno gibljem. V samo dveh mesecih so moje vene popolnoma izginile in še nikoli se nisem bolje počutila! Moje noge so popolne, gladke in zadovoljna sem, kako izgledam, saj mi ni več treba skrivati nog. Še vedno občasno uporabljam Variconis, saj nočem, da se mi žile vrnejo. To kremo priporočam vsem, ki imajo probleme s krčnimi žilami! Hvala iz srca za ta krasen izdelek!"*</p>
+                <p>- Urša Grm, Kranj</p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <h1>Osvobodi avanturista v sebi!</h1>
+            <img src="assets/img/image(31).jpg" class="full">
+            <h1 class="text-center green large"><span class="red">Najbolj ekstremen</span> preparat za brisanje razširjenih ven!</h1>
+            <img src="assets/img/image(32).jpg" class="left tp">
+            <p>Sodeč o izkušnjah žensk, ki so preizkusile Variconis, ne obstaja niti en proizvod, ki bi na vene deloval tako hitro in učinkovito kot ravno ta krema! Edinstvena sestava kreme v kombinaciji z močnimi naravnimi izvlečki daje najbolj ekstremne rezultate! <span class="yellow_bg"><strong>Najhitrejši način odstranjevanja razširjenih in pajkasti žil!</strong></span> Naroči in se prepričaj!</p>
+            <div class="clear"></div>
+            <div class="button_order">
+                <div><a href="#form" id="btn1">Prejmi kremo s 50-% popustom</a></div>
+            </div>
+            <h3>Zakaj niti en proizvod ni učinkovit kot Variconis?</h3>
+            <p>Ne pozabi na dejstvo, da mnogo proizvajalcev poskuša narediti kopijo te kreme. Razlika med to in vsemi ostalimi kremami je v tem, kako se pridobijo sestavine za Variconis. Samo najbolj čisti izvlečki lahko dajo rezultate.</p>
+            <p>Variconis vsebuje rastlinske izvlečke, proizvedene pod strogo kontroliranimi pogoji. Na ta način se iz rastlin vzamejo najboljše snovi, ki jih lahko ponudijo. Tako v formulo vstopijo najbolj čisti in izbrani izvlečki rastlin, ki dokazano dajejo rezultate in olajšajo in pospešijo proces odstranjevanja razhširjenih ven.</p>
+            <p>Skoraj vse sestavine kreme so od nekdaj poznane po tem, da pomagajo pri tem problemu. Vendar je pa je bil šele nedavno ustvarjen idealen odmerek sestavin, ki vplivajo na zmanjšanje in brisanje razširjenih ven. Zaradi tega je ta krema sredstvo številka 1 v svetu pri odstranjevanju razširjenih ven!</p>
+            <img src="assets/img/image(33).jpg" class="left"><img src="assets/img/image(34).jpg" class="right sh-medium">
+            <h4>Aloe vera</h4>
+            <p>Aloe vera je ena od najpogostejših rastlin, uporabljenih za zdravljenje kožnih bolezni, in verjetno ena od najbolj preučevanih rastlin. Ima dokazan učinek pri mnogih stanjih, vključno z osteoartritisom, bursitisom, herpesom, hemoroidi, razširjenimi venami, celjenjem ran, psoriazo, sončnimi opeklinami in ozeblinami. Pri zdravljenju razširjenih ven aloe vera igra pomembno vlogo zaradi svoje sposobnosti, da zmanjša zatečene vene. Ima tudi sposobnost, da koži vrne elastičnost in vpliva na proizvodnjo kolagena, ki je pomemben pri napenjanju kože.</p>
+            <hr>
+            <img src="assets/img/image(35).jpg" class="right"><img src="assets/img/image(36).jpg" class="left sh-medium">
+            <h4>Šipkovo olje</h4>
+            <p>Šipkovo olje je polno esencialnih hranljivih snovi za kožo, kot so vitamini, antioksidanti in esencialne maščobne kisline. Te snovi negujejo kožo, jo naredijo gladko in zapolnijo linije in brazgotine. Pri zdravljenju razširjenih ven pa olje šipka pomaga pri blaženju bolečin v nogah, tako da lahko zmanjša uporabo analgetikov. Ena od najboljših lastnosti šipka je sproščanje mišic, kar pomaga pri utrujenih nogah.</p>
+            <hr>
+            <img src="assets/img/image(37).jpg" class="left"><img src="assets/img/image(34).jpg" class="right sh-medium">
+            <h4>Izvleček lobodike</h4>
+            <p>Lobodika je poznana po svojih vazokonstriktivnih in protivnetnih lastnostih, kar vpliva na zmanjšanje razširjenih ven in hemoroidov. Uporablja se zaradi jačanja žil, izboljševanja periferne cirkulacije in ustavitve iztekanja skozi stene kapilar. Ta rastlina blaži simptome utrujenih in težkih nog, obenem pa zmanjša občutek napetosti in srbenja v nogah.</p>
+            <hr>
+            <img src="assets/img/image(38).jpg" class="right"><img src="assets/img/image(36).jpg" class="left sh-medium">
+            <h4>Arganovo olje</h4>
+            <p>Argania spinosa, oziroma argan, je bogata z vitaminom E in maščobnimi kislinami in ima zato številne koristi za kožo. Olje argana se uporablja za zdravljenje številnih kožnih bolezni, kot so akne, ekcemi, infekcije in psoriaza. Zato se arganovo olje uporablja v številnih kozmetičnih preparatih proti staranju kože, saj preprečuje občutek napetosti in srbenja v nogah.</p>
+            <hr>
+            <img src="assets/img/image(39).jpg" class="left">
+            <h4>Izvleček ognjiča</h4>
+            <p>Solidago virgaurea ali ognjič vsebuje veliko količino lipofilnih flavonoidov, ki so koristni pri mnogih stanjih. Zato se izvleček ognjiča uporablja za blaženje bolečin, oteklin, revme in artritisa. Uporablja se tudi za zdravljenje resnejših bolezni, kot so diabetes, hemoroidi, notranje krvavitve, herpes, astma in povečanje prostate.</p>
+            <h1 class="green">Dejstvo:</h1>
+            <img src="assets/img/image(40).jpg" class="right">
+            <h4>Na tržišču obstaja nešteto ponaredkov kreme Variconis. Ne dovoli, da te podjetja, ki proizvajajo cenene kopije tega preparata pod podobnim imenom, prevarajo. Samo denar boš vrgel stran, razširjene vene pa ne bodo izginile.</h4>
+            <h2 class="red">Ali veš, da so razširjene vene eden najpogostejših vzrokov kompleksov, ki jih je lahko preprečiti, takoj za debelostjo?</h2>
+            <h3>Po najnovejših statistikah in podatkih o razširjenih venah Svetovne zdravstvene organizacije z njimi nastopijo številni zaskrbljujoči zapleti:</h3>
+            <div class="clear"></div>
+            <ul class="list-type">
+                <li><span class="yellow_bg">Krvavenje ven</span></li>
+                <li>Krvni strdki</li>
+                <li><span class="yellow_bg">Vnetja</span></li>
+                <li>Suha koža, ki srbi</li>
+                <li><span class="yellow_bg">Rane na koži</span></li>
+                <li>Odprte rane/čiri</li>
+                <li><span class="yellow_bg">Sprememba v barvi</span></li>
+                <li>Glivične infekcije</li>
+                <li><span class="yellow_bg">Bakterijske infekcije</span></li>
+                <li>Tveganja bolezni globokih ven</li>
+            </ul>
+            <p>Tveganja pred vsemi temi zapleti lahko znatno zmanjšaš z redno uporabo kreme in vodenjem zdravega načina življenja – z redno telesno vadbo in zdravo prehrano.</p>
+            <h1 class="text-center large violet">Najboljši način, da dobro izgledaš in se rešiš razširjenih ven!</h1>
+            <h4 style="letter-spacing:1px;">Počutila se boš odlično – ZAJAMČENO!</h4>
+            <h6 class="grey-box">Ana Brezovar je <span class="red">v samo 4 tednih popolnoma izbrisala svoje razširjene vene!</span><br>To je neverjeten uspeh! S pomočjo kreme Variconis <span class="red">lahko to storiš tudi ti!</span></h6>
+            <p>Ti je dovolj kavbojk in dolgih kril, s katerimi skrivaš noge? Ali ni že čas, da ne samo obrišeš razširjene vene, ampak da se tudi počutiš absolutno fantastično? Medtem ko razširjene vene izginjajo s tvojih nog z neverjetno hitrostjo, se boš ves čas počutila odlično. Variconis ne samo učinkovito briše razširjenih ven, temveč tudi zagotavlja boljše počutje kot pa z uporabo katerega koli drugega izdelka na tržišču.</p>
+            <p>Variconis omogoča hitro odstranjevanje razširjenih in pajkastih ven, ne glede na tvojo genetsko pogojenost. Začni brisati razširjene vene še danes s kremo Variconis, ki daje <strong>najboljši občutek pri izgubi modrine na nogah!</strong></p>
+            <h4>Formulirana, da hitro izbriše vene</h4>
+            <div class="violet-box">
+                <h1>5 razlogov, zaradi katerih lahko verjameš temu preparatu</h1>
+                <ol>
+                    <li>Skrivnost tega naravnega preparata je znana že tisoče let</li>
+                    <li>100-% testiran in originalen proizvod</li>
+                    <li>Milijoni žensk po vsem svetu so se znebili razširjenih ven z njegovo uporabo</li>
+                    <li>Preprostost uporabe – samo redno nanašanje</li>
+                    <li>100-% zajamčeni rezultati ali pa ti vrnemo denar</li>
+                </ol>
+            </div>
+            <h1 class="text-center">Imej videz kot zvezda, počuti se kot zvezda, bodi zvezda!</h1>
+            <div class="geobox">
+                <img src="assets/img/image(41).jpg" class="center">
+                <div class="clear-twe"></div>
+                <h4>"Končno samozavestna v kopalkah!"</h4>
+                <p>"Živjo, moje ime je Tanja Mlakar. Stara sem 30 let in živim v Mariboru. Bila sem zelo uničena, saj sem se morala nehati udeleževati lepotnih tekmovanj zaradi razširjenih ven in kapilar, ki so se mi videle. Sovražila sem svoje noge. Ko sem pričela z uporabo kreme Variconis, so bile popolnoma modre. Nisem pričakovala nekih posebnih rezultatov, saj to ni bila prva krema, ki sem jo uporabljala. Ampak je prva, s katero sem dosegla rezultate. Počutim se sijajno, ni me sram obleči bikinija in pokazati svojih nog. To kremo bi priporočila vsakomur, ki ima težave z krčnimi žilami in kapilarami. Dajte ji priložnost, ne bo vas razočarala – samo mene poglejte! :)"*</p>
+                <p>Prisrčen pozdrav.<br>Tanja Mlakar</p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <h2>POGLEJ SI TOLE:</h2>
+            <img src="assets/img/image(42).jpg" class="left">
+            <h3>Reši se razširjenih ven s kremo Variconis</h3>
+            <h3 class="red">in osvoji bogate nagrade!</h3>
+            <h6>... ja, čisto zares.</h6>
+            <h6><br></h6>
+            <h6>Pošlji nam svoje izkušnje s kremo Variconis, skupaj s fotografijami tvojih nog prej in potem. Najboljše bomo objavili in nagradili!</h6>
+            <div class="clear"></div>
+            <p>Fotografija tvojih nog pred uporabo kreme Variconis je lahko katera koli fotografija, na kateri nisi zadovoljna z videzem svojih nog. Fotografija "potem" mora biti tista, na kateri se opazijo rezultati, da bi motivirala tudi druge, ki imajo iste težave, da si pomagajo.</p>
+            <p>Če ne želiš poslati svojih fotografij, nam je dobrodošla vsaka izkušnja tistih, ki so se prepričali v delovanje kreme Variconis. Nagrajujemo tudi izkušnje brez fotografij!</p>
+            <p>Prosimo te, da so izkušnje iskrene, saj te bomo pred objavo kontaktirali, da podpišeš verodostojnost izjave in prevzameš svojo nagrado.</p>
+            <p>Nagrade so zelo bogate. Si jih želiš tudi ti?</p>
+            <p>*Ponudba je veljavna samo, če naročiš še danes.</p>
+            <div class="button_order">
+                <div><a href="#form" id="btn1">Naroči svoje testno pakiranje.</a></div>
+            </div>
+            <h2>Kaj dobiš s kremo Variconis:</h2>
+            <ul class="list-nice-arrow">
+                <li><span class="yellow_bg">Brezhibno lepe noge, ki si jih že od nekdaj želiš</span></li>
+                <li>Elastično in gladko kožo</li>
+                <li>
+                    <span class="yellow_bg">Boljše razpoloženje</span>
+                </li>
+                <li>Višjo samozavest</li>
+                <li><span class="yellow_bg">Boljši odnos do sebe in drugih</span></li>
+                <li>Zadovoljstvo s svojim videzom</li>
+                <li><span class="yellow_bg">Možnost, da oblečeš kratko krilo</span></li>
+                <li>Najhitrejše in najbolj zdravo odstranjevanje razširjenih ven, ki si ga lahko predstavljaš</li>
+                <li><span class="yellow_bg">Dobro zdravje</span></li>
+                <li>Več pozornosti</li>
+            </ul>
+            <div class="clear"></div>
+            <p>In to še ni vse ...</p>
+            <p>Če ti izkušnje naših uporabnikov niso dovolj, naroči svoje testno pakiranje in se sam prepričaj, o čem govorimo ...</p>
+            <p>Nemogoče je na enem mestu zbrati milijone izkušenj, ki jih imajo ženske po vsem svetu s kremo Variconis. Ampak ena stvar je vsem vsem skupna – vse so se rešile razširjenih ven in živijo zadovoljno življenje kot srečne osebe z brezhibnimi nogami – brez stranskih učinkov!</p>
+            <p></p>
+            <h1 class="text-center medium green">Krema po 50-% znižani ceni le danes!</h1>
+            <h5 class="text-center red spellcheck">Ponudba se izteče: <br><span class="action_date spellcheck"><script>dtime_nums(-1, true)</script></span> ob 23:59.</h5>
+            <h5>&nbsp;</h5>
+            <h5 class="text-center">Če naročiš danes, ti nudimo 50-% popust na kremo. Izdelek dostavimo v diskretnem pakiranju preko zanesljive dostavne službe.</h5>
+            <h5>&nbsp;</h5>
+            <img src="assets/img/product3.png" class="left">
+            <h3 class="green">O izdelku:</h3>
+            <h5>Odkar se je pojavila na tržišču, je čudežna skrivnost naravnih snovi pomagala milijonom žensk po celem svetu, da se rešijo razširjenih ven na popolnoma naraven, hiter in lahek način, brez operacije. Izdelek je primeren za vsakega in ne vsebuje alergenov.</h5>
+            <div class="clear"></div>
+            <h5 class="red">POZOR! Lažni preparati za odstranjevanje razširjenih ven!</h5>
+            <p>Živimo v svetu, v katerem se na žalost živi od prevare. Zaradi tega bi te radi opozorili, kako prepoznati nekatere od imitacij kreme Variconis, saj nočemo, da zaman trošiš denar za proizvode, ki ti ne bodo prinesli rezultatov:</p>
+            <ul class="list-type-normal">
+                <li><strong>Trditve, da se razširjene vene odstranijo preprosto in brez truda. </strong>Proizvajalci, ki trdijo, da se boš v rekordno kratkem času brez malo truda rešila razširjenih ven, ti lažejo. Veš, da je to nemogoče.</li>
+                <li><strong>Kirurško odstranjevanje. </strong>Zagotavljajo ti rezultate, pri tem pa ne opozorijo na vse zaplete in stranske učinke, ki se lahko pojavijo po teh postopkih. Po drugi strani pa lasersko odstranjevanje zagotavlja rezultate, a lahko pomaga le pri manjših pajkastih žilicah. Te metode so drage, boleče in polne tveganj.</li>
+                <li><strong>Obljube, da se razširjene vene ne bodo vrnile, ne glede na vse. </strong>Veš, da je nemogoče, da se razširjene vene nikoli ne vrnejo, ko se jih enkrat rešiš, če ne paziš na ohranjanje rezultatov ali vsaj občasno ne nadaljuješ z uporabo proizvoda. Ne padaj v te pasti. Odstranjevanje razširjenih in pajkastih žil ni končen proces. V tvojem telesu lahko v določenih življenskih obdobjih pride do določenih sprememb in slabljenja sten žil po uporabi preparata za odstranjevanje ven, zato boš, če se popolnoma zapustiš, ponovno pristala na istem.</li>
+            </ul>
+            <div class="button_order">
+                <div><a href="#form" id="btn1">Naroči svoje testno pakiranje!</a></div>
+            </div>
+            <h1 class="green">Najpogostejša vprašanja</h1>
+            <ul class="list-faq">
+                <li>Kdaj moram uporabljati kremo Variconis?</li>
+                <li>- Kremo nanesi dvakrat na dan, zjutraj in zvečer, med prvimi 4–6 tedni. Krema se nanese po kopanju, na čisto in suho kožo. Nežno vtriraj kremo s krožnimi gibi, dokler je koža popolnoma ne vpije.</li>
+                <li>Koliko časa bo trajala ena krema Variconis?</li>
+                <li>- Če se uporablja v skladu z navodili za predel nog, bo ena krema dovolj za en mesec uporabe.</li>
+                <li>Ali bo krema Variconis imela učinek, če ne spremenim svojih prehrambenih navad in ne telovadim?</li>
+                <li>- Bo, samo proces bo počasnejši kot pri ljudeh, ki skupaj s kremo tudi vadijo, da bi izboljšali cirkulacijo krvi.</li>
+                <li>Ali ima Variconis interakcije s kakšnimi zdravili?</li>
+                <li>- NE! Krema Variconis je popolnoma varna za uporabo. Če pa zaradi specifičnosti svoje bolezni nisi prepričana, se posvetuj s svojim zdravnikom.</li>
+                <li>Ali so kremi Variconis kakšni alergeni?</li>
+                <li>- Ne, krema ne vsebuje alergenov.</li>
+                <li>Ali je uporaba kreme Variconis varna v nosečnosti in med dojenjem?</li>
+                <li>- Kot velja tudi za vse ostale preparate, se ne priporoča njena uporaba v nosečnosti in med dojenjem.</li>
+                <li>Kako pošljete kremo Variconis?</li>
+                <li>- Izdelek vam dostavimo na hišni naslov preko zanesljive kurirske službe.</li>
+                <li>Kdaj bo moje naročilo odposlano?</li>
+                <li>- Vsa naročila se odpošljejo v roku 2–3 delovnih dni po naročilu.</li>
+                <li>Ali lahko Variconis uporabljajo mlajši od 18 let?</li>
+                <li>- Kreme Variconis, tako kot drugih preparatov proti razširjenim venam, ne bi smeli uporabljati otroci, mlajši od 18 let. V tem primeru se je pred uporabo nujno posvetovati z zdravnikom.</li>
+            </ul>
+            <hr>
+            <h1 class="text-center green">Poglej, kako lahko TAKOJ začneš brisati razširjene vene na naše tveganje in stroške!</h1>
+            <p><strong>Opozorilo: </strong>Kot verjetno veš, so bili do sedaj vsi proizvodi proti razširjenim venam prevara, Če ti že uspe odstraniti razširjene vene in ublažiti bolečine, se te vrnejo dvakrat hitreje ali, še huje, ogroziš svoje zdravje in vržeš stran denar brez rezultatov. Si žrtev neučinkovitih preparatov, bolečih operacij in laserja? Potem razumemo tvojo skeptičnost.</p>
+            <p>Zato ti dajemo možnost, da dobiš povrnjen denar, če z rezultati nisi zadovoljen. Pomisli, ali bi res tvegali bankrot ali pa smo samo prepričani v učinkovitost izdelka, ki ga imaš pred seboj? <br> </p>
+            <p>Če ne veš, kakšen je občutek ...</p>
+            <p>- Ponosno pokazati svoje brezhibno lepe in gladke noge<br>- Hoditi z dvignjeno glavo v svoji najboljši obleki, saj veš, da sijajno izgledaš<br>- Obleči svoje priljubljene kratke hlače ali mini krilo, brez sramu zaradi izbočenih in modrih ven<br>- Hoditi, skakati in teči brez bolečin in tegob v nogah</p>
+            <p>... čas je, da to spoznaš! Priporočamo ti, da nehaš živeti slabo življenje, polno bolečine, tegob in skrivanja svojih nog pred drugimi. Zato ti dajemo možnost, da vidiš rezultate na sebi, preden se odločiš, kaj boš naredila.</p>
+            <p>Vsi govorijo: "Kupi od nas. Daj nam svoj denar." Mi ti pravimo, da oceniš rezultate in se potem odločiš, ali želiš svoj denar nazaj ali pa bi se nam morda rada zahvalila.</p>
+            <p>Če z rezultati nisi zadovoljna, nas kontaktiraj v roku testnega obdobja in vrnili ti bomo denar. </p>
+            <h1 class="green">Seveda pa obstaja en pogoj!</h1>
+            <p>Kot lahko vidiš iz izkušenj naših uporabnikov, ta izdelek deluje. Mi smo se v to prepričali na več načinov, ti pa se še moraš.</p>
+            <p>Če bi rada dobila priložnost, da testiraš proizvod v testnem obdobju, te prosimo, da vneseš svoje podatke v tabelo spodaj in preveriš, ali izpolnjuješ vse kriterije za testno obdobje uporabe kreme Variconis.</p>
+            <p><strong>Z najlepšimi željami,<br>da uspeš v svoji nameri,<br>Goran Horvat in team Variconis</strong></p>
+            <div class="clear"></div>
+        </div>
+        <!-- //LEFT PART -->
+        <!-- RIGHT PART -->
+        <div id="right_side_wrapper">
+            <div class="gray-box geobox">
+                <h6 class="small">Ines Lebar</h6>
+                <h5 class="blue">"Veselo nosim minice!"</h5>
+                <p class="red"><strong>Rešila sem se krčnih žil v 2 mesecih</strong></p>
+                <img src="assets/img/image(43).jpg" class="full">
+                <p>"Po ločitvi sem hotela nekaj storiti zase. Dala sem priložnost tej kremi v samo 2 mesecih sem obrisala vene s svojih nog. Sedaj moje noge izgledajo bolje kot v srednji šoli in počutim se čudovito! Hvala!"*</p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <img src="assets/img/image(44).jpg" class="badge">
+            <div class="gray-box">
+                <img src="assets/img/image(45).jpg" class="full">
+                <p><span class="yellow_bg"><strong>Osvobodi se, ponovno nosi krila in pokaži svoje popolne noge</strong></span></p>
+                <p>Ti je dovolj skrivanja pod hlačami? Nehaj s tem!!! Čas je, da zamenjaš svojo obleko. Variconis ti bo pomagal, da hitro odstraniš razširjene in pajkaste vene! Sedaj lahko z našo pomočjo brez tveganja odstraniš razširjene vene!</p>
+            </div>
+            <div class="gray-box">
+                <img src="assets/img/image(46).jpg" class="full top">
+                <p><strong>Bodi srečna! Življenje ne pomeni le biti živ – treba ga je živeti! Že danes začni uživati v življenju!</strong></p>
+            </div>
+            <div class="clear"></div>
+            <div class="half-box">
+                <img src="assets/img/image(47).jpg">
+            </div>
+            <div class="half-box">
+                <h4 class="blue">Variconis te izziva, da oblečeš kratko krilo!<br>Kdo bo zmagal? IZBIRA JE TVOJA!</h4>
+            </div>
+            <div class="clear"></div>
+            <img src="assets/img/product3.png">
+            <div class="gray-box">
+                <div class="geobox">
+                    <h6 class="text-center small">Tatjana Grohar</h6>
+                    <h5 class="text-center blue">"Še nikoli nisem bila tako zadovoljna!"</h5>
+                    <p class="red"><strong>Tatjana je premagala krčne žile</strong></p>
+                    <img src="assets/img/image(48).jpg" class="full">
+                    <p>"Odločila sem se in uspelo mi je! Premagala sem krčne žile, s katerimi sem se dolgo borila. Mnogo bolje se počutim fizično in neprimerno bolje sem razpoložena in zadovoljna sama s sabo. Vsi opazijo spremembno na meni, ne samo fizično – sem tudi veliko bolj vedra oseba!"*</p>
+                    <p class="right"><strong>-Tatjana</strong></p>
+                    <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+                    <hr>
+                </div>
+                <h5 class="text-center green">Rada nosim krila,<br>ne maram skrivati nog</h5>
+                <img src="assets/img/image(49).jpg" class="full bottom">
+            </div>
+            <div class="clear"></div>
+            <p class="text-center"><strong>Katere metode odstranjevanja ven si želiš?</strong></p>
+            <div class="half-box">
+                <img src="assets/img/product3.png">
+                <p><strong>Variconis</strong><br>Varen za uporabo<br>Deluje hitro<br>Trajni rezultati</p>
+            </div>
+            <div class="half-box">
+                <img src="assets/img/image(6).jpg" alt="side">
+                <p><strong>Operacija</strong><br>Boleča in tvegana<br>Dolgo obdobje okrevanja<br>Rezultati niso trajni</p>
+            </div>
+            <div class="clear-twe"></div>
+            <div class="gray-box">
+                <img src="assets/img/image(51).jpg" class="top">
+                <p><strong>Reši se ven super hitro s temi nasveti:</strong></p>
+                <p><strong>1. Variconis</strong></p>
+                <p>Vsak dan uporabljaj kremo Variconis v skladu z navodili.</p>
+                <p><strong>2. Telovadba</strong></p>
+                <p>Če želiš pospešiti odstranjevanje razširjenih ven in preprečiti njihov ponoven pojav, v svoje življenje vpelji fizično aktivnost. Vsak dan zmerno vadi po 30 minut, da izboljšaš cirkulacijo krvi.</p>
+                <p><strong>3. Spanje</strong></p>
+                <p>Spi z rahlo dvignjenimi nogami, približno 10 cm. Kri iz ven se tako ne bo zadrževala v nogah, temveč bo tekla k srcu.</p>
+            </div>
+            <div class="gray-box geobox">
+                <h6 class="small underline"><strong>Anja Horvat</strong></h6>
+                <h5 class="blue">"Končno sem zadovoljna sama s sabo!"</h5>
+                <p class="red"><strong>Moje noge so prekrasne!</strong></p>
+                <img src="assets/img/image(52).jpg" class="full">
+                <p>"Od nekdaj sem imela težave s kapilarami in venami, ampak to me je še posebej zadelo, ko sem šla v srednjo šolo. Tedaj mi je bilo, kot vsem drugim puncam, pomembno, da sem lepa in všeč fantom. Vsak, ki ima težave z modrino na nogah, ve, kako sem se počutila – zavistno sem gledala vse tiste popularne, lepe punce s popolnimi nogami, za katerimi so noreli vsi fantje. Začela sem počasi. Najprej sem nehala sedeti s prekrižanimi nogami, potem sem pričela telovaditi in vključila Variconis v svojo rutino. V samo 2 tednih sem opazila spremembe, tako na svojem razpoloženju kot na nogah!! Bila sem bolj samozavestna in vedno bolj motivirana, da nadaljujem. In poglejte me (smeh)."*</p>
+                <p class="right"><strong>- Alenka Horvat</strong></p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <div class="half-box no wfixb1">
+                <img src="assets/img/product3.png">
+            </div>
+            <div class="half-box">
+                <h5 class="blue tt">Popolne noge so sedaj na dosegu roke!</h5>
+            </div>
+            <div class="clear"></div>
+            <div class="gray-box geobox">
+                <h6 class="small underline">Anita Bizjak</h6>
+                <h5 class="blue">"Našla sem metodo, ki zares deluje!"</h5>
+                <p class="red"><strong>Moje noge so spet popolne</strong></p>
+                <img src="assets/img/image(54).jpg" class="full">
+                <p>"Zdravo, sem Anita Bizjak iz Trbovelj, stara sem 33 let. Začela sem se počutiti nelagodno, ko so se mi po rojstvu hčerke pojavile krčne žile. Ker veliko časa preživim v službi, ki zahteva stanje, so moje vene v samo pol leta postale zelo izražene. Potem mi je prijateljica priporočila Variconis, s priporočilom, da grem do vaskularnega kirurga, ki mi bo pomagal glede drugih smernic. Iskreno, nič je nisem poslušala, le začela sem uporabljati Variconis in nosila sem udobno obutev s primerno peto. Kolikor sem le mogla, sem se izogibala sedenju in stanju, in hitro sem opazila razliko! Sedaj imam voljo, da nadaljujem in privedem svoje noge do popolnosti! Hvala vam!"*</p>
+                <p class="right"><strong>Vse najboljše iz srca,<br>Anita Bizjak</strong></p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <div class="half-box">
+                <h4 class="blue text-center">Naredi<br>najboljšo<br>stvar<br>zase<br>in brez sramu<br>pokaži<br>svoje <br>popolne<br>noge!</h4>
+            </div>
+            <div class="half-box">
+                <img src="assets/img/image(55).jpg">
+            </div>
+            <div class="clear"></div>
+            <div class="gray-box geobox">
+                <h6 class="small underline">Marko Novosel</h6>
+                <h5 class="blue">"Počutim se bolje kot kdajkoli!"</h5>
+                <p class="red"><strong>Nimam več bolečin v nogah</strong></p>
+                <img src="assets/img/image(56).jpg" class="full">
+                <p>"Variconis mi je pomagala, da se počutim bolje in da moje noge izgledajo veliko bolje kot prej ... Bil sem pri vaskularnem kirurgu in priporočil mi je, da skupaj s kremo delam lahke vaje. Neskončno sem mu hvaležen za to!"*</p>
+                <p class="right"><strong>- Marko Novosel</strong></p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <img src="assets/img/image(57).jpg">
+            <div class="gray-box geobox">
+                <h6 class="small underline">Katarina Medved</h6>
+                <h5 class="blue">"Bolj sigurna sem vase"</h5>
+                <p class="red"><strong>Katarina se je znebila krčnih žil!</strong></p>
+                <img src="assets/img/image(58).jpg" class="full">
+                <p>"Tistega dne, ko sem oblekla kratko krilo in videla, kako izražene in modre vene imam, sem popolnoma ponorela. Vprašala sem se, kako sem si lahko dovolila, da se mi to zgodi. Potem, ko sem se dobro zjokala, sem se odločila, da se morajo stvari spremeniti. Začela sem raziskovati po internetu, kako najlažje in najhitreje rešiti problem z žilami. Odločila sem se, da začnem telovaditi vsak večer in slučajno sem na nekem forumu naletela na Variconis – vsi so navdušeni nad rezultati. Našla sem jo "online" in naročila, da jo preizkusim. Držala sem se navodil in noge mazala dvakrat na dan. Ker sem takoj opazila rezultate, sem se odločila, da pričnem delati vaje za boljšo cirkulacijo in rezultati so kmalu postali še boljši.</p>
+                <p><span class="yellow_bg">Najprej nisem mogla verjeti svojim očem, ko sem videla, da moje noge niso več modre zaradi ven. Še večje presenečenje je pa bilo, da je bolečina izginila. Od srca priporočam to kremo vsem, ki se borijo s krčnimi žilami in bolečinami v nogah. Nikakršnih nezaželjenih učinkov ni povzročila, moram pa priznati, da je zelo enostavna za uporabo in zelo hitro in dobro deluje. Še naprej jo uporabljam.</span>."*</p>
+                <p class="right"><strong>Hvala<br>- Katarina Medved</strong></p>
+                <p class="spellcheck">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</p>
+            </div>
+            <div class="gray-box">
+                <img src="assets/img/image(59).jpg" class="badge">
+                <p><strong>Ne pristajaj na cenene imitacije</strong></p>
+                <p>Ne pozabi, to je edini originalen izdelek, ki vsebuje idealen odmerek rastlin, učinkovitih pri zdravljenju razširjenih ven.</p>
+                <p>Glede na to, da je njegova popularnost hitro zrasta, saj so ljudje resnično opazili rezultate, se je takoj pojavil kup proizvodov, ki obljubljajo isto. NE DOVOLI, da te njihove prazne obljube prevarajo!</p>
+                <p>*Poštnina se ne povrne.</p>
+                <p>Nam ni vseeno za naše uporabnike. Zavedamo se, kako pomembna je varnost osebnih podatkov in jih dobro zaščitimo.</p>
+                <p>Da bi te zaščitili pred morebitnimi zlorabami, izdelek plačaš po povzetju. Naš kurir ti bo v diskretnem pakiranju dostavil izdelek na hišni naslov.</p>
+                <img src="assets/img/image(60).jpg" class="badge">
+                <div class="clear-twe"></div>
+                <h4>..::POMEMBNO::..</h4>
+                <p><strong>Zaloge izdelka so omejene. Naročila se sprejemajo do <span class="red"><span class="action_date spellcheck"><script>dtime_nums(-1, true)</script></span>. do 23:59.</span> Po izteku tega roka izdelek ne bo več na voljo.</strong></p>
+            </div>
+            <img src="assets/img/image(61).jpg" class="badge-mini">
+            <p class="text-center"><strong>POZOR: </strong>Če ti vene pričnejo izginjati po 48-ih urah, zmanjšaj uporabo kreme na vsak drugi dan.</p>
+        </div>
+        <div class="clear-twe"></div>
+        <p><span class="bigps">P.S.<span class="blue"> POMEMBNO – še ena stvar.</span></span> Zaradi dostopnosti zalog je testno obdobje dovoljeno samo tistim osebam, ki se kvalificirajo v predhodnji tabeli. Prosimo te za iskrenost pri vnosu podatkov! Če se kvalificiraš, lahko še danes naročiš svojo kremo Variconis in prejmeš 50-% popust.</p>
+        <p><strong>Enostavno izpolni našo naročilnico in začni brisati razširjene vene takoj.</strong></p>
+        <p><span class="yellow_bg">Opomba: Poskusno obdobje je na voljo le kratkoročno in ne moremo zagotoviti, koliko časa bo še v pondbi. Če bereš to opombo, ti priporočamo, da se prijaviš takoj!</span></p>
+        <div class="large-button">
+            <a href="#form" id="btn1">NAROČI SVOJE TESTNO PAKIRANJE!</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+
+        <div id="wrapper-footer">
+
+            <div class="clear"></div>
+            <div class="clear"></div>
+            <div class="tosbox">
+
+                <!-- MOBILE nad E BOOK check -->
+
+                <!-- 	<div class="footer-line"></div> -->
+                <div class="clear"></div>
+
+                <div class="footer-1">
+
+                    <h4>Varen nakup</h4>
+
+                    <p>Za obdelavo vašega naročila uporabljamo najbolj razširjene varnostne ukrepe, ki zagotavljajo, da so vaši podatki, ki jih vpišete pri naročilu, varno shranjeni.</p>
+
+                </div>
+
+                <div class="footer-2">
+
+                    <h4>Čas dostave 24h</h4>
+
+                    <p>Naročene proizvode dostavljamo v najkrajšem roku enega dneva od prejetja nakazila.</p>
+
+                </div>
+
+                <div class="footer-3">
+
+                    <h4>Zanesljiva dostava</h4>
+
+                    <p>Nosimo odgovornost za varno dostavo proizvoda na vaš naslov v delujočem stanju.</p>
+
+                </div>
+
+                <div class="footer-5">
+
+                    <h4>Visoke ocene kakovosti</h4>
+
+                    <p>Izdelek je izdelan iz vrhunskih visokokakovostnih materialov, ki zagotavljajo enostavno in varno uporabo proizvoda.</p>
+                </div>
+
+                <div class="clear"></div>
+                <div class="ftwrp">
+
+                    <div class="footer-img1"><img title="" alt="" src="assets/img/image(62).jpg" style="margin: 3px 0 0 0"></div>
+
+                    <div class="footer-img2"><img title="" alt="" src="assets/img/image(63).jpg" style="margin: 3px 0 0 0"></div>
+
+                    <div class="footer-img3"><img title="" alt="" src="assets/img/image(64).jpg" style="margin: 20px 0 0 0"></div>
+
+                    <div class="footer-img5"><img title="" alt="" src="assets/img/image(66).jpg" style="margin: 0px 0 0 0"></div>
+
+                    <div class="clear"></div>
+                </div>
+
+                <div class="last_text">
+
+                    Na željo uporabnikov so imena spremenjena. Izjave niso ocenjene s strani strokovnjakov. Ta proizvod ni namenjen diagnostiki, preprečevanju ali zdravljenju katere koli bolezni. Rezultati se razlikujejo od osebe do osebe. Preden pričnete uporabljati kakršen koli program za rešitev vaših težav, se o tem posvetujte s strokovnjakom.
+                    Vse izjave, zabeležene na tej spletni strani, so preverjene s pomočjo standardnih pravnih postopkov.
+
+                    <br><br>
+
+                    Pri promociji ali sponzoriranju tega izdelka ne sodeluje nobena medijska družba
+                </div>
+                <!-- //MOBILE nad E BOOK check -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <a href="#form" class="cta-link" id="btn2">Klikni tukaj in se reši razširjenih ven za vedno, brez nevarnih in bolečih operacij!</a>
+
+    <!-- Footer section end here -->
+    <div class="company_info_wrapper">
+
+        <div class="disclamer_fixed">*Prikazani rezultati so individualni in se lahko od osebe do osebe razlikujejo. Proizvajalec ne zagotavlja istih rezultatov.</div>
+        <a href="" target="_blank" class="privacy">Privacy</a>
+        <script type="text/javascript">
+         $(function(){
+                 $("a[href^='#']").click(function(){
+                         var _href = $(this).attr("href");
+                         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                         return false;
+                 });
+         });
+         </script>
+<script>
+;(function () {
+    (function () {
+        var redirects = document.querySelectorAll('.redirect_field');
+        for (var i = 0; i < redirects.length; i++) {
+            redirects[i].value = location.protocol + '//' + location.hostname + '/thanks.html';
+        }
+    })();
+
+    (function () {
+        var params = {};
+        location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (s, k, v) {
+            params[k] = v
+        });
+
+        var subid = 1;
+
+        for (var p in params) {
+            var forms = document.querySelectorAll('form');
+
+            for (var i = 0; i < forms.length; i++) {
+                forms[i].insertAdjacentHTML('beforeend', '<input type="hidden" name="subids[' + subid + ']" value="' + params[p] + '">');
+            }
+
+            subid++;
+        }
+    })();
+})();
+</script></body>
+</html>
